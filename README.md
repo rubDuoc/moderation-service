@@ -64,7 +64,12 @@ mvnw spring-boot:run
 Variables opcionales: `USER_SERVICE_URL`, `FORUM_SERVICE_URL`, `DB_USERNAME`, `DB_SERVICE`, `TNS_ADMIN`, `PORT`,
 `CORS_ORIGENES`.
 
+## Despliegue en la nube (Render)
+
+URL publica: **https://foro-moderation-service-1-0.onrender.com** (por ejemplo, `/api/estado`).
+Imagen Docker publicada en Docker Hub y desplegada en Render; el wallet de Oracle llega como archivo secreto.
+
 ## Postman
 
 Colección con tests automáticos en `postman/moderation-service.postman_collection.json`
-(importar en Postman → *Run collection*). Reporta, banea, desbanea y elimina sus reportes de prueba.
+(importar en Postman junto con el entorno `postman/render.postman_environment.json` para probar contra Render → *Run collection*). Reporta, banea, desbanea y elimina sus reportes de prueba.
